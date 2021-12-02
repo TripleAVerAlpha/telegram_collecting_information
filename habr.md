@@ -12,9 +12,9 @@
 
 # Библиотеки Python
 Начнём с того что Python предлагает для разработки бота в Telegram
-* PyTelegramBotAPI это библиотека, которая честности ради, попалась мне на глаза самой первой. Статья на python.ru очень подробно описывает, как работать с данной библиотекой, реализуя самые нужные функции
-* AIOGram
-* Telepot
+* [PyTelegramBotAPI](https://github.com/python-telegram-bot/python-telegram-bot) это библиотека, которая честности ради, попалась мне на глаза самой первой. Статья на [python.ru](https://pythonru.com/primery/python-telegram-bot) очень подробно описывает, как работать с данной библиотекой, реализуя самые нужные функции
+* [AIOGram](https://github.com/aiogram/aiogram)
+* [Telepot](https://github.com/nickoala/telepot)
 
 Для своего решения я выбрал первую библиотеку и написал класс, который реализует default интерфейс. Теперь для того, чтобы создать интерфейс для моей программы, мне нужно написать одну строчку:
 ```
@@ -28,7 +28,7 @@ bot = Bot(file="Data/setting")
 bot.send_message(text, ["Удалить пр запись", "Пропустить", "Конец"])
 ```
 В данном примере создаются кнопки: Удалить пр запись (Удалить предыдущую запись, сокращенно для красоты интерфейса), Пропустить, Конец.
-Моя надстройка: TelegramBot.py
+Моя надстройка: [TelegramBot.py](https://github.com/TripleAVerAlpha/telegram_collecting_information)
 
 # Пример UI
 Теперь в качестве примера хотелось бы показать результат использования данного класса для создания кастомного UI. В качестве задачи возьмём создание датасета. Это задача, с которой я столкнулся во время разрабатывания своей нейронной сети по распознаванию речи. Итак, сначала пробежимся по функционалу, который должен реализовываться в данном интерфейсе:
@@ -138,4 +138,4 @@ def record(message):
 
 ![](https://github.com/TripleAVerAlpha/telegram_collecting_information/blob/main/images/image1.png)
 
-Полный код лежит в git.
+Полный код лежит в [git](https://github.com/TripleAVerAlpha/telegram_collecting_information).
