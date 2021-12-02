@@ -21,6 +21,7 @@
 bot = Bot(file="Data/setting")
 ```
 В file содержится информация об token и id пользователя, с которым общаемся. Если ее нет, то бот отвечает всем.
+![](https://github.com/TripleAVerAlpha/telegram_collecting_information/blob/main/images/image4.png)
 
 Вывод данных в моём решении занимает тоже одну строчку и это, с учётом создания побочных кнопок, логику которых я позже описываю. Кнопки я передаю как массив их наименований.
 ```
@@ -99,6 +100,7 @@ def get_message(message):
 
 Проверяем:
 
+![](https://github.com/TripleAVerAlpha/telegram_collecting_information/blob/main/images/image3.png)
 
 Все остальное реализуется аналогично, поэтому перейдем к голосу:
 ```
@@ -125,9 +127,15 @@ def record(message):
 # Результат
 
 
+![](https://github.com/TripleAVerAlpha/telegram_collecting_information/blob/main/images/image5.png)
+
 Реализовав такого бота, мы получили возможность подключить к сбору датасета огромное количество людей, и единственный софт, который им нужен это Telegram с несколькими миллиардами пользователей. Со стороны разработки такой интерфейс занял тоже немного (5 минут с получением token и медленной печатью).
 На выходе получаем manifest.csv:
 
+![](https://github.com/TripleAVerAlpha/telegram_collecting_information/blob/main/images/image2.png)
+
 и папку WAV:
+
+![](https://github.com/TripleAVerAlpha/telegram_collecting_information/blob/main/images/image1.png)
 
 Полный код лежит в git.
